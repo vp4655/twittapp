@@ -1,0 +1,96 @@
+<div class="wrapper">
+    <div class="backimg">
+        <div class="container pannel">
+            <div>
+                <h1>TWITTER SEARCH</h1>
+                <a class="btn linked" ng-click="scrollTo('application-form')">#SEARCH</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="dynamicTabs">
+
+    <a href="#" id="application-form"></a>
+    <form ng-submit="addTab(tTitle,tContent)" flex-gt-md class="form-design">
+        <div layout="vertical" layout-sm="horizontal" layout-padding layout-align="left center">
+            <md-input-container>
+                <label>Tab Name</label>
+                <input ng-model="tTitle">
+                <div class="hint">Name displayed for this search</div>
+            </md-input-container>
+            <md-input-container>
+                <label>Search (#awesome)</label>
+                <input ng-model="tContent">
+                <div class="hint">Search term for twitter</div>
+            </md-input-container>
+            <md-button class="md-primary" type="submit" style="max-height: 40px; margin-top:20px;" ng-disabled="!tContent || !tTitle" aria-label="Add New Search">Add New Search</md-button>
+        </div>
+    </form>
+
+    <md-tabs md-selected="selectedIndex" md-dynamic-height md-border-bottom class="tab-color">
+        <md-tab ng-repeat="tab in tabs" md-on-select="onTabSelected(tab)" label="{{tab.title}}">
+            <md-content class="content-background">
+                <div layout="column" layout-fill layout-align="center center">
+                    <div layout="row">
+                        <h1>{{tab.q}} ({{tab.totalItems}})</h1>
+                    </div>
+                    <div layout-gt-sm="row" style="width: 100%">
+                        <div flex="20">
+                            <div layout="row">
+                                <md-button aria-label="Remove" class="remove-tab md-warn md-icon-button" ng-disabled="tabs.length == 1" ng-click="removeTab( tab )">
+                                    <md-icon md-font-icon="icon-trash"></md-icon>
+                                </md-button>
+                            </div>
+                        </div>
+                        <div flex="60"></div>
+                        <div layout="row" flex="20">
+                            <h4 class="md-body-2 change"><b>LIVE FEED</b></h4>
+                            <md-switch ng-model="tab.liveFeed" ng-change="goLive(tab.q, tab)" class="live-color md-warn" aria-label="Live feed"></md-switch>
+                        </div>
+                    </div>
+
+                    <div flex class="tab-text">
+                        <md-card ng-repeat="t in tweets.slice(((currentPage-1)*itemsPerPage), ((currentPage)*itemsPerPage)) track by $index">
+                            <div layout="horizontal" layout-align="center center">
+                                <div flex="33">
+                                    <div>
+                                        <img ng-src="{{t.user.profile_image_url}}" class="md-card-image">
+                                    </div>
+                                </div>
+                                <div flex>
+                                    <div>
+                                        <h2>{{t.user.screen_name}}</h2>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p layout-padding>
+                                <span ng-bind-html="highlight(t.text, tab.q)">{{t.text}}</span>
+                            </p>
+                            <div layout="horizontal" layout-align="center center">
+                                <div flex>
+                                    <div>
+                                            <p>Created at : {{t.created_at}}</p>
+                                    </div>
+                                </div>
+                                <div flex="15">
+                                    <div>
+                                        <div layout="horizontal" layout-align="center center">
+                                            <div flex>
+                                                <md-button style="background-color: #00ACEE;" aria-label="{{t.text}}" ng-href="http://twitter.com/{{t.user.screen_name}}/status/{{t.id_str}}" class="md-fab md-mini fab-color" target="_blank">
+                                                    <md-icon md-font-icon="icon-twitter4" class="icon-fab"></md-icon>
+                                                </md-button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </md-card>
+                        <uib-pagination ng-model="currentPage" items-per-page="itemsPerPage" total-items="tab.totalItems" class="pagination-sm"></uib-pagination>
+                    </div>
+                </div>
+            </md-content>
+        </md-tab>
+    </md-tabs>
+
+</div>

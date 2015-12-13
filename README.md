@@ -1,5 +1,5 @@
 # twittapp
-Twitter search app build with Node, Angular and Socket.io.
+Twitter search app built with Node, Angular and Socket.io.
 
 ## Getting Started
 

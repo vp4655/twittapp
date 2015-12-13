@@ -183,8 +183,22 @@ h1 {
     background: white;
 }
 
+.md-body-1.blue{
+    color: #3B94D9;
+    font-weight: 700;
+    font-size: 16px;
+}
+
 .md-body-2.change {
     line-height: 40px;
+}
+
+.md-body-2.darken{
+    font-weight: 600;
+}
+
+.md-body-2.gray{
+    color: #C7C7C7;
 }
 
 md-card {
@@ -195,6 +209,13 @@ md-card {
 
 md-card .md-card-image {
     width: 100px;
+}
+
+.md-card-image.image-design{
+    border: 2px solid transparent;
+    border-radius: 50px;
+    margin-left: 10%;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
 
 md-icon.icon-fab {
@@ -273,4 +294,13 @@ md-switch.md-checked.live-color .md-thumb.md-ink-ripple::before {
 .wrapper {
     height: 60%;
     min-height: 300px;
+}
+
+.xcenter{
+    text-align: center;
+}
+
+.xsmall{
+    font-size: 10px;
+    color: #3B94D9;
 }

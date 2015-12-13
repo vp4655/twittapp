@@ -79,7 +79,6 @@ twitterApp.controller('HomeController', ['$scope', '$location', '$sce', '$anchor
     }
 
     function openModal(title, content){
-        console.log(content);
         $mdDialog.show($mdDialog.alert()
                 .parent(angular.element(document.body))
                 .title(title)
@@ -109,7 +108,6 @@ twitterApp.controller('HomeController', ['$scope', '$location', '$sce', '$anchor
     function spawnSearch(q, tab) {
         Socket.emit('q', q);
         Socket.on('tweet_' + q, function (tweet) {
-            console.log(q, tweet.id);
             if ($scope['tweets_' + q].length > 500) {
                 $scope['tweets_' + q].shift();
             }
@@ -155,7 +153,5 @@ twitterApp.controller('HomeController', ['$scope', '$location', '$sce', '$anchor
     }
 
     //endregion
-
-    addTab('xmenapocalypse', 'XMenApocalypse');
 }
 ]);

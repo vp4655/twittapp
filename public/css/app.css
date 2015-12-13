@@ -1,0 +1,276 @@
+@font-face {
+    font-family: trade-gothic-bold-condensed;
+    src: url('../fonts/Trade-Gothic-LT-Bold-Condensed-No--20.ttf');
+}
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+body.login {
+    background: #0288b1;
+    font-family: calibri;
+    font-size: 18px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.backimg {
+    background: url("../images/bg.jpg");
+    background-size: cover;
+    height: 100%;
+}
+
+.btn.linked {
+    border-radius: 0;
+    background: none;
+    padding: 12px 22px;
+    border: 2px solid white;
+    color: white;
+    font-family: Verdana, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.btn.linked:hover, .btn.linked:focus, .btn.linked:active, .btn.linked.active {
+    color: #1CBAA6;
+    background-color: white;
+    border-color: #1CBAA6;
+}
+
+.btn.linked:active, .btn.linked.active {
+    border-color: #1CBAA6;
+    background-color: white;
+    color: #1CBAA6;
+    box-shadow: none;
+}
+
+.content {
+    height: 100%;
+}
+
+.content-background {
+    background: rgb(230, 239, 243);
+}
+
+.dynamicTabs {
+    padding-top: 10px;
+}
+
+.dynamicTabs md-tabs .md-view {
+    background: #EEE;
+}
+
+.dynamicTabs .tab-text {
+    margin-bottom: 32px;
+}
+
+.dynamicTabs .md-button {
+    display: block;
+}
+
+.dynamicTabs .tab1 {
+    background-color: #abd6e4;
+    min-height: 300px;
+}
+
+.dynamicTabs .tab2 {
+    background-color: #94caa6;
+    min-height: 300px;
+}
+
+.dynamicTabs .tab3 {
+    background-color: #c4b5a2;
+    min-height: 300px;
+}
+
+.dynamicTabs .tab4 {
+    background-color: #e3cde8;
+    min-height: 300px;
+}
+
+.dynamicTabs .title {
+    padding-top: 8px;
+    padding-right: 8px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #888;
+    margin-top: 24px;
+}
+
+.dynamicTabs [layout-align] > * {
+    margin-left: 8px;
+}
+
+.dynamicTabs form > [layout] > * {
+    margin-left: 8px;
+}
+
+.dynamicTabs .long > input {
+    width: 264px;
+}
+
+.dynamicTabs .md-button {
+    max-height: 30px;
+}
+
+.dynamicTabs .md-button.add-tab {
+    margin-top: 20px;
+    max-height: 30px !important;
+}
+
+.dynamicTabs .md-button.remove-tab {
+    margin-top: 10px;
+    max-height: 30px !important;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: #C40017;
+    font-size: 24px;
+}
+
+.form-design {
+    width: 700px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.highlightedText {
+    color: #00ACEE;
+}
+
+.hint {
+    position: absolute;
+    left: 2px;
+    right: auto;
+    bottom: 7px;
+    font-size: 11px;
+    line-height: 14px;
+    transition: all 0.3s cubic-bezier(0.55, 0, 0.55, 0.2);
+    color: #c2c2c2;
+}
+
+.hint.ng-leave.ng-leave-active {
+    bottom: 26px;
+    opacity: 0;
+}
+
+.hint.ng-enter.ng-enter-active {
+    bottom: 7px;
+    opacity: 1;
+}
+
+.login h1 {
+    margin-top: 10%;
+    color: white;
+    text-decoration: underline;
+}
+
+.login-wrapper {
+    display: block;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.26);
+    margin: 36px;
+    padding: 18px;
+    text-align: center;
+    background: white;
+}
+
+.md-body-2.change {
+    line-height: 40px;
+}
+
+md-card {
+    background: #fff;
+    max-height: 300px;
+    width: 900px;
+}
+
+md-card .md-card-image {
+    width: 100px;
+}
+
+md-icon.icon-fab {
+    font-size: 2rem;
+    height: 2rem;
+    width: 2rem;
+    line-height: 1.4rem;
+}
+
+md-fab.fab-color {
+    background-color: #00ACEE;
+}
+
+.md-primary.md-button {
+    color: #00ACEE;
+    background-color: white;
+    border: 1px solid #00ACEE;
+    border-radius: 0;
+}
+
+md-switch.md-checked.live-color .md-bar {
+    background-color: rgba(18, 240, 32, 0.5);
+}
+
+md-switch.md-checked.live-color .md-thumb {
+    background-color: rgba(18, 240, 32, 0.87);
+}
+
+md-switch.md-checked.live-color .md-thumb.md-ink-ripple {
+    background-color: rgba(18, 240, 32, 0.5);
+    color: rgba(18, 240, 32, 0.5);
+}
+
+md-switch.md-checked.live-color .md-thumb.md-ink-ripple::before {
+    background-color: rgba(18, 240, 32, 0.5);
+    color: rgba(18, 240, 32, 0.5);
+}
+
+.md-warn.md-button {
+    color: #C40017;
+    background-color: white;
+    border: 1px solid #C40017;
+    border-radius: 0;
+}
+
+.md-warn.md-button:disabled {
+    border-color: rgba(0, 0, 0, 0.26);
+}
+
+.ng-scope {
+    height: 100%;
+}
+
+.pannel {
+    position: relative;
+    top: 40%;
+    text-align: center;
+}
+
+.pannel h1 {
+    font-family: trade-gothic-bold-condensed, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 46px;
+    color: white;
+}
+
+.tab-color {
+    background: rgba(4, 169, 243, 0.6);
+}
+
+.tab-color md-ink-bar {
+    color: white;
+    background-color: white;
+}
+
+.wrapper {
+    height: 60%;
+    min-height: 300px;
+}

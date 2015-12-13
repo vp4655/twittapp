@@ -3,7 +3,8 @@
  */
 var twitterApp = angular.module('twitterApp', ['ngMaterial', 'btford.socket-io', 'ui.router', 'ui.bootstrap']);
 
-twitterApp.config(function($stateProvider, $urlRouterProvider){
+twitterApp.config(function($locationProvider, $stateProvider, $urlRouterProvider){
+    $locationProvider.html5Mode(true);
 
     $urlRouterProvider.otherwise('/home');
 

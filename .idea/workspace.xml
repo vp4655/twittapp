@@ -107,8 +107,8 @@
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7648766">
-              <caret line="31" column="77" selection-start-line="31" selection-start-column="77" selection-end-line="31" selection-end-column="77" />
+            <state vertical-scroll-proportion="0.02467344">
+              <caret line="1" column="58" selection-start-line="1" selection-start-column="58" selection-end-line="1" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -498,14 +498,20 @@
       <option name="project" value="LOCAL" />
       <updated>1450047036885</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added README">
+      <created>1450047559734</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1450047559734</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24968314" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24968314" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -559,7 +565,8 @@
     <MESSAGE value="Project initialization v0.8" />
     <MESSAGE value="Added node_modules and bower files to gitignore" />
     <MESSAGE value="Final touches. v1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final touches. v1.0" />
+    <MESSAGE value="Added README" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added README" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -853,8 +860,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7648766">
-          <caret line="31" column="77" selection-start-line="31" selection-start-column="77" selection-end-line="31" selection-end-column="77" />
+        <state vertical-scroll-proportion="0.02467344">
+          <caret line="1" column="58" selection-start-line="1" selection-start-column="58" selection-end-line="1" selection-end-column="58" />
           <folding />
         </state>
       </provider>
